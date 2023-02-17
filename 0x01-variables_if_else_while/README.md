@@ -22,4 +22,7 @@
 
 # print 0-9 using putchar
 6-print_numberz
+
+# print the alphabet in reverse
+7-print_tebahpla.c
 ```
