@@ -14,9 +14,6 @@ int main(void)
 	srand(time(0));
 
 	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
-	/* int ans holds the last digit of number*/
-	/* run an if else if loop to print the correct output */
 	int ans;
 
 	ans = n % 10;
