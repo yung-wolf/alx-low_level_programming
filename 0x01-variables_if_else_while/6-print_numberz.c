@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - print numbers from 0-9
  * Return: 0 if successful
  */
 
@@ -9,13 +9,13 @@ int main(void)
 {
 	int num;
 
-	num = 0;
-	while (num < 10)
+	num = 48;
+	while (num < 58)
 	{
-		printf("%d", num);
+		putchar(num);
 		num++;
 	}
-	printf("\n");
+	putchar('\n');
 
 	return (0);
 }

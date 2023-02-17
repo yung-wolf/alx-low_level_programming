@@ -19,4 +19,7 @@
 
 # Print number from 0-9 in base 10
 5-print_numbers.c
+
+# print 0-9 using putchar
+6-print_numberz
 ```
