@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 /* main - Entry point*/
 /* more headers goes there */
 /*Return: 0 if successful*/
