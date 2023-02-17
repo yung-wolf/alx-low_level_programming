@@ -25,4 +25,7 @@
 
 # print the alphabet in reverse
 7-print_tebahpla.c
+
+# Hexadecimal
+8-print_base16.c
 ```
