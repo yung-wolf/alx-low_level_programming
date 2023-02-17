@@ -10,12 +10,11 @@
 int main(void)
 {
 	int n;
+	int ans;
 
 	srand(time(0));
 
 	n = rand() - RAND_MAX / 2;
-	int ans;
-
 	ans = n % 10;
 
 	if (ans > 5)
