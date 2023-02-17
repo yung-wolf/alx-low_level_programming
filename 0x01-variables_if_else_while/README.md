@@ -7,4 +7,7 @@
 
 # Prints the last digit of given number
 1-last_digit.c
+
+# Prints the alphabets in lower case
+2-print_alphabet.c
 ```
