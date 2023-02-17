@@ -16,4 +16,7 @@
 
 # Write a program that prints the alphabet in lowercase, followed by a new line.
 4-print_alphabt.c
+
+# Print number from 0-9 in base 10
+5-print_numbers.c
 ```
