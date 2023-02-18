@@ -28,4 +28,7 @@
 
 # Hexadecimal
 8-print_base16.c
+
+# Patience
+9-print_comb.c
 ```
