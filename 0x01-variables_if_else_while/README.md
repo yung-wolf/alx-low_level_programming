@@ -31,4 +31,7 @@
 
 # Patience
 9-print_comb.c
+
+# Print Comb3
+100-print_comb3
 ```
