@@ -19,7 +19,7 @@ int main(void)
 		{
 			for (; tens2 < 58; tens2++)
 			{
-				while (ones2 < 58; ones2++)
+				for (; ones2 < 58; ones2++)
 				{
 					putchar(d1_tens);
 					putchar(d1_ones);
