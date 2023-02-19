@@ -9,14 +9,14 @@
 int main(void)
 {
 	int d1_tens;
-	int d1_ones;
+	int d1_ones = 48;
 	int tens2;
 	int ones2;
 
 	ones2 = d1_ones + 1;
 	for (d1_tens = 48; d1_tens < 58; d1_tens++)
 	{
-		for (d1_ones = 48; d1_ones < 58; d1_ones++)
+		for (; d1_ones < 58; d1_ones++)
 		{
 			for (tens2 = d1_tens; tens2 < 58; tens2++)
 			{
