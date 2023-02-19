@@ -8,12 +8,11 @@
 
 int main(void)
 {
-	int d1_tens = 48;
 	int d1_ones = 48;
 	int tens2 = d1_tens;
 	int ones2 = d1_ones + 1;
 
-	for (; d1_tens < 58; d1_tens++)
+	for (int d1_tens = 48; d1_tens < 58; d1_tens++)
 	{
 		for (; d1_ones < 58; d1_ones++)
 		{
