@@ -8,15 +8,16 @@
 
 int main(void)
 {
+	int d1_tens = 48;
 	int d1_ones = 48;
-	int tens2;
+	int tens2 = d1_tens;
 	int ones2 = d1_ones + 1;
 
-	for (int d1_tens = 48; d1_tens < 58; d1_tens++)
+	for (; d1_tens < 58; d1_tens++)
 	{
 		for (; d1_ones < 58; d1_ones++)
 		{
-			for (tens = d1_tens; tens2 < 58; tens2++)
+			for (; tens2 < 58; tens2++)
 			{
 				while (ones2 < 58)
 				{
@@ -28,8 +29,7 @@ int main(void)
 					if ((d1_tens == 57) && (d1_ones == 56)
 						&& (ones2 == 57) && (tens2 == 57))
 					{
-						putchar(' ');
-						break;
+						putchar(' ') break;
 					}
 					else
 					{
