@@ -29,6 +29,7 @@ int main(void)
 					if ((d1_tens == 57) && (d1_ones == 56)
 						&& (ones2 == 57))
 					{
+						;
 					}
 					else
 					{
