@@ -13,16 +13,12 @@ int main(void)
 	int tens2;
 	int ones2;
 
-	d1_tens = 48;
-	d1_ones = 48;
-	tens2 = d1_tens;
 	ones2 = d1_ones + 1;
-
-	for (; d1_tens < 58; d1_tens++)
+	for (d1_tens = 48; d1_tens < 58; d1_tens++)
 	{
-		for (; d1_ones < 58; d1_ones++)
+		for (d1_ones = 48; d1_ones < 58; d1_ones++)
 		{
-			for (; tens2 < 58; tens2++)
+			for (tens2 = d1_tens; tens2 < 58; tens2++)
 			{
 				while (ones2 < 58)
 				{
@@ -31,9 +27,16 @@ int main(void)
 					putchar(' ');
 					putchar(tens2);
 					putchar(ones2);
-					putchar(',');
-					putchar(' ');
-					ones2++;
+					if ((d1_tens == 57) && (d1_ones == 56)
+						&& (ones2 == 57))
+					{
+					}
+					else
+					{
+						putchar(',');
+						putchar(' ');
+						ones2++;
+					}
 				}
 				ones2 = 48;
 			}
@@ -42,7 +45,7 @@ int main(void)
 		}
 		d1_ones = 48;
 		ones2 = d1_ones + 1;
+		tens2 = d1_tens + 1;
 	}
-
 	return (0);
 }
