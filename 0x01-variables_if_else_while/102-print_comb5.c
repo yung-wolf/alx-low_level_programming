@@ -8,17 +8,16 @@
 
 int main(void)
 {
-	int d1_tens;
+	int d1_tens = 48;
 	int d1_ones = 48;
-	int tens2;
-	int ones2;
+	int tens2 = d1_tens;
+	int ones2 = d1_ones + 1;
 
-	ones2 = d1_ones + 1;
-	for (d1_tens = 48; d1_tens < 58; d1_tens++)
+	for (; d1_tens < 58; d1_tens++)
 	{
 		for (; d1_ones < 58; d1_ones++)
 		{
-			for (tens2 = d1_tens; tens2 < 58; tens2++)
+			for (; tens2 < 58; tens2++)
 			{
 				while (ones2 < 58)
 				{
