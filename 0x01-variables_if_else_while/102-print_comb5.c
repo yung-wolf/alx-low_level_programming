@@ -27,7 +27,7 @@ int main(void)
 					putchar(tens2);
 					putchar(ones2);
 					if ((d1_tens == 57) && (d1_ones == 56)
-						&& (ones2 == 57))
+						&& (ones2 == 57) && (tens2 == 57))
 					{
 						;
 					}
