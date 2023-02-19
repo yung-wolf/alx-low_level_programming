@@ -19,7 +19,7 @@ int main(void)
 		{
 			for (; tens2 < 58; tens2++)
 			{
-				while (ones2 < 58)
+				while (ones2 < 58; ones2++)
 				{
 					putchar(d1_tens);
 					putchar(d1_ones);
@@ -29,13 +29,13 @@ int main(void)
 					if ((d1_tens == 57) && (d1_ones == 56)
 						&& (ones2 == 57) && (tens2 == 57))
 					{
-						putchar(' ') break;
+						putchar(' ');
+						break;
 					}
 					else
 					{
 						putchar(',');
 						putchar(' ');
-						ones2++;
 					}
 				}
 				ones2 = 48;
