@@ -20,4 +20,7 @@ void print_alphabet_x10(void);
 
 int _islower(int c);
 /* returns 1 for lowercase and 0 for other */
+
+int _isalpha(int c);
+/* returns 1 for letters and 0 for others */
 #endif
