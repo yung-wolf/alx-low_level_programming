@@ -12,4 +12,6 @@
 int _putchar(char c);
 /* Print character*/
 
+void print_alphabet(void);
+/* print alphabets in lowercase */
 #endif
