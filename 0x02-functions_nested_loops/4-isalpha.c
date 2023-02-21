@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _islower - Prints 1 for lowercase and 0 for other characters
+ * _isalpha - Prints 1 for letters and 0 for other characters
  * @c: type int character to test
  * Return: 0 or 1
  */
