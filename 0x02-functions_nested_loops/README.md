@@ -13,4 +13,6 @@
 4. Returns 1 for letter, 0 for other
 
 5. Prints sign of num
+
+6. Return absolute number
 ```

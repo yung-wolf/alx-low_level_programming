@@ -26,4 +26,7 @@ int _isalpha(int c);
 
 int print_sign(int n);
 /* returns 1,0,-1 for positive, zero, negative numbers */
+
+int _abs(int z);
+/* returns absolute num */
 #endif
