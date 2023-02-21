@@ -3,3 +3,4 @@ go_to_playground
 test.c
 test.o
 a.out
+_putchar.c
