@@ -14,4 +14,7 @@ int _putchar(char c);
 
 void print_alphabet(void);
 /* print alphabets in lowercase */
+
+void print_alphabet_x10(void);
+/* prints 10 rows of alphabets in lowercase */
 #endif

@@ -2,9 +2,9 @@
 # Project Definitions
 
 ```bash
-# Print _putchar
-0-putcha.c
+0. Print _putchar
 
-# Print the alphabets in lowercase
-1-alphabet.c
+1. Print the alphabets in lowercase
+
+2. Print 10 rows of the alphabets in lowercase
 ```
