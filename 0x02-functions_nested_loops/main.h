@@ -17,4 +17,7 @@ void print_alphabet(void);
 
 void print_alphabet_x10(void);
 /* prints 10 rows of alphabets in lowercase */
+
+int _islower(int c);
+/* returns 1 for lowercase and 0 for other */
 #endif
