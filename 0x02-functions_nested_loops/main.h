@@ -29,4 +29,7 @@ int print_sign(int n);
 
 int _abs(int z);
 /* returns absolute num */
+
+int print_last_digit(int x);
+/* prints and returns last digit*/
 #endif

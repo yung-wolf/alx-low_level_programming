@@ -15,4 +15,6 @@
 5. Prints sign of num
 
 6. Return absolute number
+
+7. Print and return last digit
 ```
