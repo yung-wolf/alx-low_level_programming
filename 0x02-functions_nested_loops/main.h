@@ -23,4 +23,7 @@ int _islower(int c);
 
 int _isalpha(int c);
 /* returns 1 for letters and 0 for others */
+
+int print_sign(int n);
+/* returns 1,0,-1 for positive, zero, negative numbers */
 #endif
