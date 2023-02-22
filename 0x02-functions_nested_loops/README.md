@@ -17,4 +17,6 @@
 6. Return absolute number
 
 7. Print and return last digit
+
+8. Give Jack all the time
 ```

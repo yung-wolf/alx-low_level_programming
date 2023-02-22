@@ -32,4 +32,7 @@ int _abs(int z);
 
 int print_last_digit(int x);
 /* prints and returns last digit*/
+
+void jack_bauer(void);
+/* prints the hours and minutes in a day */
 #endif
