@@ -27,4 +27,6 @@
 11. Print from n- 98
 
 12. Print times table. Accepts num between 0-15 included.
+
+13. Print sum of multiples of 3 & 5 under 1024
 ```
