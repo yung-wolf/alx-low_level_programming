@@ -41,4 +41,7 @@ void times_table(void);
 
 int add(int x, int y);
 /* sum of two ints*/
+
+void print_to_98(int n);
+/* print from n to 98 */
 #endif
