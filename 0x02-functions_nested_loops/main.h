@@ -44,4 +44,7 @@ int add(int x, int y);
 
 void print_to_98(int n);
 /* print from n to 98 */
+
+void print_times_table(int n);
+/* print times table of num between 0 - 15 */
 #endif

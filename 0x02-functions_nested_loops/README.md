@@ -25,4 +25,6 @@
 10. Sum of two int
 
 11. Print from n- 98
+
+12. Print times table. Accepts num between 0-15 included.
 ```
