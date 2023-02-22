@@ -38,4 +38,7 @@ void jack_bauer(void);
 
 void times_table(void);
 /* 9 times table */
+
+int add(int x, int y);
+/* sum of two ints*/
 #endif
