@@ -30,5 +30,7 @@
 
 13. Print sum of multiples of 3 & 5 under 1024
 
-14. Print the fibonacci seq to the 50th term.
+14. Print the fibonacci seq to the 50th term
+
+15. Print sum of even terms of fibonacci seq < 4,000,000.
 ```
