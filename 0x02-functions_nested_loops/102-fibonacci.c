@@ -8,16 +8,14 @@
 int main(void)
 {
 	long stop = 12586269025;
-	long oldNum = 0;
+	long oldNum = 1;
 	long newNum = 1;
-	long sum = 1;
+	long sum = 0;
 	int num;
 
-	printf("%i", 0);
-	printf(", ");
 	printf("%i", 1);
 
-	for (num = 1; sum < stop; num++)
+	for (num = 1; sum <= stop; num++)
 	{
 		sum = oldNum + newNum;
 		oldNum = newNum;
