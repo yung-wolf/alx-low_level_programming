@@ -18,7 +18,7 @@ int main(void)
 		if (num % key1 == 0 || num % key2 == 0)
 			sum += num;
 	}
-	printf("The sum of the multiples of %i and %i is: %i\n", key1, key2, sum);
+	printf("%i\n", sum);
 
 	return (0);
 }
