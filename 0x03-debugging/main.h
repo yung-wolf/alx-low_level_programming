@@ -9,4 +9,7 @@ void positive_or_negative(int i);
 int largest_number(int a, int b, int c);
 /* returns largest num out of three nums*/
 
+void print_remaining_days(int month, int day, int year);
+/* print remaining days in a year (leap year included)*/
+
 #endif /* MAIN_H */
