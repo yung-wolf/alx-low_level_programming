@@ -71,4 +71,7 @@ void print_line(int n);
 
 void print_diagonal(int n);
 /* print diagonal lines 'n' number of times*/
+
+void print_square(int size);
+/* print squares 'n' number of times*/
 #endif
