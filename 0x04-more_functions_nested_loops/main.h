@@ -65,4 +65,7 @@ void print_most_numbers(void);
 
 void more_numbers(void);
 /* prints 10 rows of nums from 0-14)*/
+
+void print_line(int n);
+/* print line 'n' number of times*/
 #endif
