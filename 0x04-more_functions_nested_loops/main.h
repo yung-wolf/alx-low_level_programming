@@ -68,4 +68,7 @@ void more_numbers(void);
 
 void print_line(int n);
 /* print line 'n' number of times*/
+
+void print_diagonal(int n);
+/* print diagonal lines 'n' number of times*/
 #endif
