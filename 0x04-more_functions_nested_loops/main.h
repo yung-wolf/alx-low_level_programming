@@ -56,4 +56,7 @@ int _isdigit(int c);
 
 int mul(int a, int b);
 /* multiplies two ints*/
+
+void print_numbers(void);
+/* print nums from 0-9*/
 #endif
