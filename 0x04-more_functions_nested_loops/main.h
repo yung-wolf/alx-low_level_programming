@@ -74,4 +74,7 @@ void print_diagonal(int n);
 
 void print_square(int size);
 /* print squares 'n' number of times*/
+
+void print_triangle(int size);
+/* print triangle*/
 #endif
