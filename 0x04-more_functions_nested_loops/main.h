@@ -50,4 +50,7 @@ void print_times_table(int n);
 
 int _isupper(int c);
 /* returns 1 for uppecrcase and 0 for others*/
+
+int _isdigit(int c);
+/* returns 1 for num b/ <0-9> and 0 for others*/
 #endif
