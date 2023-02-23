@@ -53,4 +53,7 @@ int _isupper(int c);
 
 int _isdigit(int c);
 /* returns 1 for num b/ <0-9> and 0 for others*/
+
+int mul(int a, int b);
+/* multiplies two ints*/
 #endif
