@@ -47,4 +47,7 @@ void print_to_98(int n);
 
 void print_times_table(int n);
 /* print times table of num between 0 - 15 */
+
+int _isupper(int c);
+/* returns 1 for uppecrcase and 0 for others*/
 #endif
