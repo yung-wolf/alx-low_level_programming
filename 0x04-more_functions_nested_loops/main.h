@@ -62,4 +62,7 @@ void print_numbers(void);
 
 void print_most_numbers(void);
 /* print nums from 0-9 except 2 and 4*/
+
+void more_numbers(void);
+/* prints 10 rows of nums from 0-14)*/
 #endif
