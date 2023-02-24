@@ -22,7 +22,7 @@ void print_number(int n)
 
 		while (t_bag <= positive)
 			t_bag *= 10;
-		tens = t_beg / 10;
+		tens = t_bag / 10;
 
 		while (tens >= 1)
 		{
