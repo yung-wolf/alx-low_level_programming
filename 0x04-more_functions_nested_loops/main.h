@@ -77,4 +77,7 @@ void print_square(int size);
 
 void print_triangle(int size);
 /* print triangle*/
+
+void print_number(int n);
+/* prints an int */
 #endif
