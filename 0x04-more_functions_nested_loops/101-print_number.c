@@ -1,8 +1,9 @@
 #include "main.h"
 
-/*
- * print_number - prints an int
+/**
+ * print_number - prints an int.
  * @n: int argument
+ * Return: nothing
  */
 
 void print_number(int n)
