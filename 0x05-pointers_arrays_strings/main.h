@@ -89,4 +89,7 @@ void swap(int* a, int* b);
 
 int _strlen(char* s);
 /* returns len of string */
+
+void _puts(char* str);
+/* prints string to stdout*/
 #endif
