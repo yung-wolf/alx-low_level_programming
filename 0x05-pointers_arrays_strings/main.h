@@ -92,4 +92,7 @@ int _strlen(char* s);
 
 void _puts(char* str);
 /* prints string to stdout*/
+
+void print_rev(char* s);
+/* reverses string */
 #endif
