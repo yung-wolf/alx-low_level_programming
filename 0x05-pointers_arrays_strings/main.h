@@ -101,4 +101,7 @@ void rev_string(char* s);
 
 void puts2(char* str);
 /* prints every other element */
+
+void puts_half(char* str);
+/* prints last half of string*/
 #endif

@@ -8,3 +8,4 @@
 4. Prints reverse of the string.
 5. Reverse a string.
 6. Prints every other element.
+7. Prints the last half of string.
