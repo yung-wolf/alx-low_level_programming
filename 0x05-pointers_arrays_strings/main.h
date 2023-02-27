@@ -104,4 +104,7 @@ void puts2(char* str);
 
 void puts_half(char* str);
 /* prints last half of string*/
+
+void print_array(int* a, int n);
+/* print 'n' elements of an array */
 #endif

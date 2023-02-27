@@ -9,3 +9,4 @@
 5. Reverse a string.
 6. Prints every other element.
 7. Prints the last half of string.
+8. Print 'n' elements of an array.
