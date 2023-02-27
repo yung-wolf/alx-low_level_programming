@@ -83,4 +83,7 @@ void print_number(int n);
 
 void reset_to_98(int* n);
 /* updates an int using its pointer */
+
+void swap(int* a, int* b);
+/* swaps two ints using their pointers */
 #endif
