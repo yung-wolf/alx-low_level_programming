@@ -5,4 +5,5 @@
 1. Swap two ints using pointers
 2. Return the len of string.
 3. Prints string to stdout.
-4. Reverses the string.
+4. Prints reverse of the string.
+5. Reverse a string.
