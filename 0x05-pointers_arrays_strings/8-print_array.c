@@ -18,10 +18,10 @@ void print_array(int *a, int n)
 	while (*a != '\0')
 	{
 		if (len < (max - 1))
-			printf("%i, ", *str);
+			printf("%i, ", *a);
 		else if (len == (max - 1))
-			printf("%i", *str);
-		str++;
+			printf("%i", *a);
+		a++;
 		len++;
 	}
 	_putchar('\n');
