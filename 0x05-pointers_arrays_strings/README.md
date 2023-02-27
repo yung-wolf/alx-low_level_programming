@@ -7,3 +7,4 @@
 3. Prints string to stdout.
 4. Prints reverse of the string.
 5. Reverse a string.
+6. Prints every other element.
