@@ -10,3 +10,4 @@
 6. Prints every other element.
 7. Prints the last half of string.
 8. Print 'n' elements of an array.
+9. Copies string @ src to 'dest' buffer. Returns dest pointer.

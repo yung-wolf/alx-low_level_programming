@@ -107,4 +107,7 @@ void puts_half(char* str);
 
 void print_array(int* a, int n);
 /* print 'n' elements of an array */
+
+char *_strcpy(char* dest, char* src);
+/* copies string to different buffer*/
 #endif
