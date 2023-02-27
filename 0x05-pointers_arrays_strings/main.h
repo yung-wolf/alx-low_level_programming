@@ -86,4 +86,7 @@ void reset_to_98(int* n);
 
 void swap(int* a, int* b);
 /* swaps two ints using their pointers */
+
+int _strlen(char* s);
+/* returns len of string */
 #endif
