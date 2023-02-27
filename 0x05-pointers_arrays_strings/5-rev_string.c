@@ -1,5 +1,25 @@
 #include "main.h"
-int _strlen(char* s);
+
+/**
+ * _strlen - Returns the len of string
+ * @s: string argument
+ * Return: int
+ */
+
+int _strlen(char *s)
+{
+	int len = 0;
+
+	while (*s != '\0')
+	{
+		s++;
+		len++;
+	}
+
+	return (len);
+}
+
+
 
 /**
  * rev_string - reverse a string
