@@ -15,7 +15,7 @@ void print_array(int *a, int n)
 	max = n;
 	len = 0;
 
-	while (*str != '\0')
+	while (*a != '\0')
 	{
 		if (len < (max - 1))
 			printf("%i, ", *str);
