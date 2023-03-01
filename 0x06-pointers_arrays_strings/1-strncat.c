@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strcat - appends 'n' element(s) scr-string to dest-string
+ * _strncat - appends 'n' element(s) scr-string to dest-string
  * @dest: string argument
  * @src: string argument
  * @n: num of elements to be appended
