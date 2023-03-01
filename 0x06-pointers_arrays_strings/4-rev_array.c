@@ -6,7 +6,7 @@
  * @n: num of elements in array variable
  */
 
-void reverse_array(int* a, int n)
+void reverse_array(int *a, int n)
 {
 	int hold[n];
 	int i;
@@ -15,13 +15,13 @@ void reverse_array(int* a, int n)
 		a++;
 	for (i = 0; i < n; i++)
 	{
-		num1--;
-		hold[i] = *num1;
+		a--;
+		hold[i] = *a;
 	}
 	for (i = 0; i < n; i++)
 	{
-		*num1 = hold[i];
-		num1++;
+		*a = hold[i];
+		a++;
 	}
-	num1 - n;
+	a - n;
 }
