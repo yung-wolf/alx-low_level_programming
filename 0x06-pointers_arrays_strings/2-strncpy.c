@@ -4,13 +4,14 @@
  * including null byte to buffer at dest
  * @dest: dest buffer
  * @src: string argument
+ * @n: int arg
  * Return: pointer to dest
  */
 
 char *_strncpy(char *dest, char *src, int n)
 {
 	int len = 0;
-	
+
 	while (*src != '\0')
 	{
 		if (len < n)
