@@ -131,4 +131,7 @@ char *string_toupper(char* str);
 
 char *cap_string(char* s);
 /* change word to uppercase*/
+
+char *leet(char *s);
+/* encode string in 1337 leet */
 #endif

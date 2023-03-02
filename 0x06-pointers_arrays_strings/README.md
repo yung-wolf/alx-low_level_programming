@@ -8,3 +8,4 @@
 4. Reverses the contents of an array of ints.
 5. Change lowercase in string to uppercase.
 6. Capitalize every first word.
+7. Encode string with 1337 leet.
