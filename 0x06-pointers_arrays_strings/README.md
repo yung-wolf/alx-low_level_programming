@@ -10,3 +10,4 @@
 6. Capitalize every first word.
 7. Encode string with 1337 leet.
 8. Encodes string with rot13.
+9. Print a num. Without using arrays, long, or pointers.

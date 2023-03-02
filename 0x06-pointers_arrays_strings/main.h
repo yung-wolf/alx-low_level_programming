@@ -137,4 +137,7 @@ char *leet(char *s);
 
 char *rot13(char* s);
 /* encodes with rot13*/
+
+void print_number(int n);
+/* print an int without using long, arrays, or pointers*/
 #endif
