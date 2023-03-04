@@ -8,7 +8,7 @@
  * Return: pointer to 's' matches one of the bytes in 'accept'
  */
 
-unsigned int _strpbrk(char *s, char *accept)
+unsigned int *_strpbrk(char *s, char *accept)
 {
 	int i;
 	int count = 0;
