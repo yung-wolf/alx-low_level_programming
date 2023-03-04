@@ -149,4 +149,7 @@ char *_memcpy(char *dest, char *src, unsigned int n);
 
 char *_strchr(char *s, char c);
 /* finds character 'c' in string 's'*/
+
+unsigned int _strspn(char *s, char *accept);
+/* Returns the num of bytes in initial part of 's' made up of bytes only from 'accept'*/
 #endif
