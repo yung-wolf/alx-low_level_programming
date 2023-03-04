@@ -146,4 +146,7 @@ char *_memset(char *s, char b, unsigned int n);
 
 char *_memcpy(char *dest, char *src, unsigned int n);
 /* copies 'n' byte of memory from 'src' to 'dest'*/
+
+char *_strchr(char *s, char c);
+/* finds character 'c' in string 's'*/
 #endif
