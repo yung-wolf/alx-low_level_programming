@@ -143,4 +143,7 @@ void print_number(int n);
 
 char *_memset(char *s, char b, unsigned int n);
 /* fills 'n' num of memory with constant byte 'b'*/
+
+char *_memcpy(char *dest, char *src, unsigned int n);
+/* copies 'n' byte of memory from 'src' to 'dest'*/
 #endif
