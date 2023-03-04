@@ -152,4 +152,7 @@ char *_strchr(char *s, char c);
 
 unsigned int _strspn(char *s, char *accept);
 /* Returns the num of bytes in initial part of 's' made up of bytes only from 'accept'*/
+
+char *_strpbrk(char *s, char *accept);
+/* Searches a string for a set of bytes*/
 #endif
