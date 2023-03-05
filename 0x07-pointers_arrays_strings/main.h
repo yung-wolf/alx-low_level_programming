@@ -155,4 +155,7 @@ unsigned int _strspn(char *s, char *accept);
 
 char *_strpbrk(char *s, char *accept);
 /* Searches a string for a set of bytes*/
+
+char *_strstr(char *haystack, char *needle);
+/* finds substring 'needle' in "haystack"*/
 #endif
