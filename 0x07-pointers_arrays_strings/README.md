@@ -9,3 +9,4 @@
 5. A function that finds the first occurence of a substring in a string.
 6. A function to print a chessboard.
 7. A function to print the sums of diagonals in a square matrix of ints.
+8. A function that sets the value of a pointer to char.

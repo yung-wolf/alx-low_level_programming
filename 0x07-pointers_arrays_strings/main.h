@@ -161,4 +161,7 @@ char *_strstr(char *haystack, char *needle);
 
 void print_chessboard(char (*a)[8]);
 /* print a chessboard */
+
+void set_string(char **s, char *to);
+/* set value of a pointer to char*/
 #endif
