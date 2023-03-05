@@ -7,3 +7,4 @@
 3. A function that gets the length of a prefix substring.
 4. A function that searches a string for a set of bytes.
 5. A function that finds the first occurence of a substring in a string.
+6. A function to print a chessboard.
