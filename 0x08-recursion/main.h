@@ -176,4 +176,7 @@ int _strlen_recursion(char *s);
 
 int factorial(int n);
 /* returns the factorial of 'n' */
+
+int _pow_recursion(int x, int y);
+/* returns the power of 'x' to 'y' */
 #endif
