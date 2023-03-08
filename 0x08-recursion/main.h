@@ -167,4 +167,7 @@ void set_string(char **s, char *to);
 
 void _puts_recursion(char *s);
 /* prints a string to stdout ff by new line*/
+
+void _print_rev_recursion(char *s);
+/* print a string in reverse */
 #endif
