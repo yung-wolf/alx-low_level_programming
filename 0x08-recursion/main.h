@@ -179,4 +179,10 @@ int factorial(int n);
 
 int _pow_recursion(int x, int y);
 /* returns the power of 'x' to 'y' */
+
+int getRoot(int n, int root);
+/* get root of num */
+
+int _sqrt_recursion(int x);
+/* returns square root of num */
 #endif

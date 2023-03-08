@@ -8,3 +8,4 @@
 2. Function to return the len of string.
 3. Function to return the factorial of num.
 4. Function to return the value of num x raised to the power of num y.
+5. Function to return the square root of num.
