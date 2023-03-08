@@ -11,7 +11,7 @@ int getPrime(int n, int x)
 {
 	if (n % x == 0 && x > 1)
 		return (0);
-	if (root == 1)
+	if (x == 1)
 		return (1);
 	return (getPrime(n, x - 1));
 }
