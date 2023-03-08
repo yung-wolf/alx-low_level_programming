@@ -190,5 +190,5 @@ int getPrime(int n, int x);
 /* find if num is prime */`
 
 int is_prime_number(int n);
-/* GET if num is prime */`
+/* GET if num is prime */
 #endif
