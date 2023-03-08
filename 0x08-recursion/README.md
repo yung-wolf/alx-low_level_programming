@@ -6,3 +6,4 @@
 0. Function that prints a string followed by new line.
 1. Function to print a string in reverse.
 2. Function to return the len of string.
+3. Function to return the factorial of num.

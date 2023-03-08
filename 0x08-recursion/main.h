@@ -173,4 +173,7 @@ void _print_rev_recursion(char *s);
 
 int _strlen_recursion(char *s);
 /* returns the len of string */
+
+int factorial(int n);
+/* returns the factorial of 'n' */
 #endif
