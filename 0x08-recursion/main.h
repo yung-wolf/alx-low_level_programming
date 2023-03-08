@@ -185,4 +185,10 @@ int getRoot(int n, int root);
 
 int _sqrt_recursion(int x);
 /* returns square root of num */
+
+int getPrime(int n, int x);
+/* find if num is prime */`
+
+int is_prime_number(int n);
+/* find if num is prime */`
 #endif
