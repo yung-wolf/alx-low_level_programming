@@ -170,4 +170,7 @@ void _puts_recursion(char *s);
 
 void _print_rev_recursion(char *s);
 /* print a string in reverse */
+
+int _strlen_recursion(char *s);
+/* returns the len of string */
 #endif
