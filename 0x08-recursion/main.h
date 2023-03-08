@@ -187,7 +187,7 @@ int _sqrt_recursion(int x);
 /* returns square root of num */
 
 int getPrime(int n, int x);
-/* find if num is prime */`
+/* find if num is prime */
 
 int is_prime_number(int n);
 /* GET if num is prime */
