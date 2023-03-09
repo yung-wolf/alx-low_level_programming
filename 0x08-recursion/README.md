@@ -10,3 +10,4 @@
 4. Function to return the value of num x raised to the power of num y.
 5. Function to return the square root of num.
 6. Function that returns 0 if num is prime and 1 for otherwise.
+7. Function that checks if string is a palindrome.

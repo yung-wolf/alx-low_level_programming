@@ -191,4 +191,10 @@ int getPrime(int n, int x);
 
 int is_prime_number(int n);
 /* GET if num is prime */
+
+int compare(char *head, char *tail);
+/* compare first and last indexes */
+
+int is_palindrome(char *s);
+/* return 1 if string is palindrome, 0 if not */
 #endif
