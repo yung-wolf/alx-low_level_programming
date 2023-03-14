@@ -200,4 +200,7 @@ int is_palindrome(char *s);
 
 int _atoi (char *s);
 /* empty atoi funct */
+
+int get_change(int num);
+/* returns min possible change of num */
 #endif
