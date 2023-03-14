@@ -206,4 +206,16 @@ int get_change(int num);
 
 char *create_array(unsigned int size, char c);
 /* create an array of chars and init w/ char */
+
+char *_strdup(char *str);
+/* copy string */
+
+char *str_concat(char *s1, char *s2);
+/* concatenates two strings */
+
+int **alloc_grid(int width, int height);
+/* pointer to a 2d array */
+
+void free_grid(int **grid, int height);
+/* frees grid */
 #endif
