@@ -62,7 +62,11 @@ int main(int argc, char **argv)
 	int change = 0;
 
 	if (num < 0)
+	{
 		printf("0\n");
+		return (0);
+	}
+
 	change = get_change(num);
 
 	printf("%d\n", change);
