@@ -3,10 +3,10 @@
 #include "main.h"
 
 /**
- * allo_grid - returns a pointer to a 2 dimensional array of ints
+ * alloc_grid - returns a pointer to a 2 dimensional array of ints
  * @width: columns
- * 2height: rows
- * Reurn: pointer to 2d array
+ * @height: rows
+ * Return: pointer to 2d array
  */
 
 int **alloc_grid(int width, int height)
