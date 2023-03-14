@@ -5,7 +5,7 @@
 /**
  * _strlen - returns the len of string
  * @s: string
- * @Return: lenght
+ * Return: lenght
  */
 
 int _strlen(char *s)
