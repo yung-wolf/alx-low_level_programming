@@ -218,4 +218,7 @@ int **alloc_grid(int width, int height);
 
 void free_grid(int **grid, int height);
 /* frees grid */
+
+char *argstostr(int ac, char **av);
+/* concat all args to string */
 #endif
