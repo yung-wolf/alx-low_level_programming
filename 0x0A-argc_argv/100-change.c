@@ -3,47 +3,6 @@
 #include "main.h"
 
 /**
- * get_change - find minimum change possible
- * @num: num to change
- * Return: 0 if successful
- */
-
-int get_change(int num)
-{
-	int change = 0;
-
-	while (num > 0)
-	{
-		if (num == 1)
-		{
-			change += num;
-			num -= 1;
-		}
-		if (num > 1 && num < 5)
-		{
-			num -= 2;
-			change += 1;
-		}
-		if (num >= 5 && num < 10)
-		{
-			num -= 5;
-			change += 1;
-		}
-		if (num >= 10 && num < 25)
-		{
-			num -= 10;
-			change += 1;
-		}
-		if (num >= 25)
-		{
-			num -= 25;
-			change += 1;
-		}
-	}
-	return (change);
-}
-
-/**
  * main - check code
  * @argc: arg count
  * @argv: arg vector
@@ -58,18 +17,27 @@ int main(int argc, char **argv)
 		return (1);
 	}
 
-	int num = atoi(argv[1]);
-	int change = 0;
+	int n, coins;
 
-	if (num < 0)
+	if (argv[1][0] == '-')
 	{
 		printf("0\n");
 		return (0);
 	}
 
-	change = get_change(num);
+	n = atoi(argv[1]);
 
-	printf("%d\n", change);
+	coins += n / 25;
+	n = n % 25;
+	coins += n / 10;
+	n = n % 10;
+	coins += n / 5;
+	n = n % 5;
+	coins += n / 2;
+	n = n % 2;
+	coins += n / 1;
+
+	printf("%d\n", coins);
 
 	return (0);
 }
