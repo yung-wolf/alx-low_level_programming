@@ -224,4 +224,13 @@ char *argstostr(int ac, char **av);
 
 void *malloc_checked(unsigned int b);
 /* returns pointer */
+
+char *string_nconcat(char *s1, char *s2, unsigned int n);
+/* concatenates two strings */
+
+void *_calloc(unsigned int nmemb, unsigned int size);
+/* allocates memory */
+
+int *array_range(int min, int max);
+/* creates an array of ints */
 #endif
