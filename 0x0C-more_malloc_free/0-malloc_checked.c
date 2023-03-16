@@ -4,6 +4,7 @@
 /**
  * malloc_checked - returns pointer to allocated memory
  * @b: uns int arg
+ * Return: pointer
  */
 
 void *malloc_checked(unsigned int b)
