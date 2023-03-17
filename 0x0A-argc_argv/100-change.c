@@ -11,14 +11,13 @@
 
 int main(int argc, char **argv)
 {
+	int n, coins;
+
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-
-	int n, coins;
-
 	if (argv[1][0] == '-')
 	{
 		printf("0\n");
