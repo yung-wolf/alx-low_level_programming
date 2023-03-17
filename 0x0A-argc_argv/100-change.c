@@ -12,7 +12,7 @@
 int main(int argc, char **argv)
 {
 	int n;
-	int coins;
+	int coins = 0;
 
 	if (argc != 2)
 	{
