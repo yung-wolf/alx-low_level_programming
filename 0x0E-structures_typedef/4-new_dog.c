@@ -11,8 +11,8 @@ int len(char *string)
 {
 	int i;
 
-	for (i = 0; string[i]; i++)
-		;
+	for (i = 0; *(string + i); i++)
+		continue;
 	return (i);
 }
 
