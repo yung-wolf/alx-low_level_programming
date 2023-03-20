@@ -3,7 +3,7 @@
 #include "dog.h"
 /**
  * len - get length of string
- * @str: string
+ * @string: string
  * Return: length
  */
 
@@ -58,7 +58,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		name_cpy = malloc(len(name) + 1);
 		if (name_cpy == NULL)
 		{
-			free(dog1);
+			free(dog);
 			return (NULL);
 		}
 		dog->name = strcpy(name_cpy, name);
