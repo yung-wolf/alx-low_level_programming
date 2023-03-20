@@ -2,12 +2,13 @@
 #include <stdio.h>
 #include "dog.h"
 /**
- * dog_t new_dog - models a dog
+ * new_dog - models a dog
  * @name: first member
  * @age: second member
  * @owner: Third member
  *
  * Description: Holds basic info about a dog
+ * Return: init dog
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
