@@ -1,4 +1,5 @@
 #include "main.h"
+#include "dog.h"
 
 /**
  * init_dog - creates an instance of a dog
