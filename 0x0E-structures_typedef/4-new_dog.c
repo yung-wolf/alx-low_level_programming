@@ -17,8 +17,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog1 = malloc(sizeof(dog_t)); /* validate if dog1 initiated correctly */
 	if (dog1 == NULL)
 		return (NULL);
-
+	
+	dog1->name = name;
 	dog1->age = age;
+	dog1->owner = owner;
 
 	/* make copies of struct members and validate, else free on error */
 	/* set values of struct members to copies of arguments or set to NULL */
