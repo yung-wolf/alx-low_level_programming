@@ -1,4 +1,5 @@
 #include <stdarg.h>
+#include "variadic_functions.h"
 
 /**
  * print_numbers - prints num w/ separator (if != NULL)
