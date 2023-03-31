@@ -14,7 +14,6 @@ void free_list(list_t *head)
 		head = head->next;
 	}
 }
-
 /**
  * another way using temp pointer
  *
