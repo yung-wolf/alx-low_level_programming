@@ -1,6 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include "lists.h"
 
 /**
@@ -33,7 +30,7 @@ size_t listint_len(const listint_t *h)
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	size_t limit; /*holds upper limit of element in linked list*/
+	size_t limit;
 
 	if (!(n))
 		return (NULL);
