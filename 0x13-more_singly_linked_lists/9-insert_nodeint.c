@@ -31,6 +31,7 @@ size_t listint_len(const listint_t *h)
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	size_t limit;
+	listint_t *ptr, *tmp;
 
 	if (!(n))
 		return (NULL);
@@ -42,8 +43,8 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	if ((size_t)idx > limit)
 		return (NULL);
 
-	listint_t *ptr = *head;
-	listint_t *tmp = malloc(sizeof(listint_t));
+	ptr = *head;
+	tmp = malloc(sizeof(listint_t));
 
 	tmp->n = n;
 	tmp->next = NULL;
