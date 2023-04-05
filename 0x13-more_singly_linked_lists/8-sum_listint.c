@@ -5,7 +5,7 @@
  * @head: linked list
  * Return: sum of all data(n) of linked list
  */
-int sum_listint(const listint_t *head)
+int sum_listint(listint_t *head)
 {
 	int sum = 0;
 
