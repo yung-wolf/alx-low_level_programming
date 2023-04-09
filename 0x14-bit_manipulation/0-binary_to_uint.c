@@ -11,6 +11,7 @@ unsigned int binary_to_unit(const char *b)
 	unsigned int decimal = 0;
 	int i = 0, j = 0, len = 0;
 	int num;
+	char digit;
 
 	if (b == NULL)
 		return (decimal);
@@ -21,7 +22,7 @@ unsigned int binary_to_unit(const char *b)
 
 	while (j <= len)
 	{
-		char digit = b[len];
+		digit = b[len];
 
 		num = digit - 48;
 
