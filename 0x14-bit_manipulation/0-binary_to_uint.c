@@ -13,7 +13,7 @@ unsigned int binary_to_unit(const char *b)
 	int num;
 
 	if (b == NULL)
-		return (0);
+		return (decimal);
 
 	while (b[len] != '\0')
 		len++;
@@ -28,7 +28,7 @@ unsigned int binary_to_unit(const char *b)
 		if (num <= 1)
 			decimal += num << i;
 		else
-			return (0);
+			return (decimal);
 		len--;
 		i++;
 	}
