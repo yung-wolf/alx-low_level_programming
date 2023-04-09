@@ -8,7 +8,15 @@
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	int var = 1 << index;
+	unsigned int max;
+	unsigned int var;
+	
+	max = (sizeof(unsigned long int) * 8);
+	if (index > max)
+		return (-1);
 
-	return (*n |= var);
+	var = 1 << index;
+	*n = *n | var;
+
+	return (1);
 }
