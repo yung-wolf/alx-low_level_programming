@@ -4,5 +4,6 @@
 /* Function prototypes*/
 int _putchar(char c);
 unsigned int binary_to_unit(const char *b);
+int _strlen(char *str);
 
 #endif
