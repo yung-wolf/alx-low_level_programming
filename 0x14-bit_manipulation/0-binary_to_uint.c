@@ -12,7 +12,7 @@ unsigned int binary_to_unit(const char *b)
 	int i = 0, j = 0, len = 0;
 
 	if (b == NULL)
-		return (decimal);
+		return (0);
 
 	while (b[len] != '\0')
 		len++;
