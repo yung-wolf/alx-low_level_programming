@@ -6,7 +6,7 @@
  * @index: index
  * Return: 1 if successful, -1 if error
  */
-int set_bit(unsigned long int *n, unsigned int index)
+int clear_bit(unsigned long int *n, unsigned int index)
 {
 	unsigned int max;
 	unsigned int var;
