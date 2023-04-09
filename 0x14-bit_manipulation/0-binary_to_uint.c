@@ -10,12 +10,12 @@ unsigned int binary_to_unit(const char *b)
 {
 	int decimal = 0, i = 0, j = 0, len = 0;
 
-	while (*b)
-		len++;
-	len -= 1;
-
 	if (b == NULL)
 		return (decimal);
+
+	while (b[len] != '\0')
+		len++;
+	len -= 1;
 
 	while (j <= len)
 	{
