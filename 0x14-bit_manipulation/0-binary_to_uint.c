@@ -1,24 +1,6 @@
+#include <stddef.h>
 #include "main.h"
 
-/**
- * _strlen - returns the num of a string
- * @str: string
- * Return: num of str or 0 if NULL
- */
-int _strlen(char *str)
-{
-	int counter = 0;
-
-	if (str == NULL)
-		return (0);
-
-	while (*str)
-	{
-		counter++;
-		str++;
-	}
-	return (counter);
-}
 /**
  * binary_to_unit - converts a binary num to unsigned int
  * @b: holds a char of binary nums
@@ -26,16 +8,19 @@ int _strlen(char *str)
  */
 unsigned int binary_to_unit(const char *b)
 {
-	int decimal = 0, i = 0, j = 0;
-	int len = _strlen(b) - 1;
+	int decimal = 0, i = 0, j = 0, len = 0;
+
+	while (*b)
+		len++;
+	len -= 1;
 
 	if (b == NULL)
-		return (0);
+		return (decimal);
 
 	while (j <= len)
 	{
 		int num;
-		char digit = binary[len];
+		char digit = b[len];
 
 		num = digit - 48;
 
