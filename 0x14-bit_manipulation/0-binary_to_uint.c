@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * binary_to_unit - converts a binary num to unsigned int
+ * binary_to_uint - converts a binary num to unsigned int
  * @b: holds a char of binary nums
  * Return: converted num, 0 if *b holds one or more char not 0 or 1
  */
@@ -26,7 +26,7 @@ unsigned int binary_to_uint(const char *b)
 
 		num = digit - 48;
 
-		if (num <= 1)
+		if (num == 1 || num == 0)
 			decimal += num << i;
 		else
 			return (decimal);
