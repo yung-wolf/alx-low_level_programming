@@ -1,5 +1,11 @@
 #include <string.h>
 
+/**
+ * binary_to_uint - converts a binary to an usigned int
+ * @b: string of binary numbers
+ * Return: returns an unsigned int
+ */
+
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int answer = 0;
@@ -13,5 +19,5 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 	}
 
-	return answer;
+	return (answer);
 }
