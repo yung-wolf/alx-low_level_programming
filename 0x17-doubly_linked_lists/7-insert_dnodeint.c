@@ -9,8 +9,7 @@
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	unsigned int idxOfNodes;
-	unsigned int numOfNodes = 0;
+	unsigned int idxOfNodes, numOfNodes;
 	dlistint_t *dummy_h = *h;
 	dlistint_t *tmp = *h;
 	dlistint_t *tmp2 = NULL;
@@ -23,6 +22,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	ptr->prev = NULL;
 	ptr->next = NULL;
 	idxOfNodes = 0;
+	numOfNodes = 0;
 
 	/* check if idx out of range */
 	while (dummy_h != NULL)
@@ -34,7 +34,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	if (idx >= numOfNodes || idx < 0)
 		return (NULL);
 
-	while (idx - 1 != idxOfNodes)
+	while (idxOfNodes != idx - 1)
 	{
 		tmp = tmp->next;
 		idxOfNodes++;
