@@ -10,33 +10,41 @@
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	unsigned int idxOfNodes;
-	dlistint_t *hold, *ptr = *h;
-	dlistint_t *tmp = malloc(sizeof(dlistint_t));
-	if (tmp == NULL)
+	size_t numOfNodes = 0;
+	dlistint_t *dummy_h = *h; 
+	dlistint_t *tmp = *h;
+	dlistint_t *tmp2 = NULL;
+	dlistint_t *ptr = malloc(sizeof(dlistint_t));
+
+	if (ptr == NULL)
 		return (NULL);
 
-	tmp->n = n;
-	tmp->prev = NULL;
-	tmp->next = NULL;
+	ptr->n = n;
+	ptr->prev = NULL;
+	ptr->next = NULL;
 	idxOfNodes = 0;
 
-	if (idx > idxOfNodes || idx < 0)
+	/* check if idx out of range */
+	while (dummy_h != NULL)
+	{
+		dummy_h = dummy_h->next;
+		numOfNodes++;
+	}
+
+	if (idx >= numOfNodes)
 		return (NULL);
 
-	while (ptr != NULL)
+	while (idx - 1 != idxOfNodes)
 	{
-		if (idx - 1 == idxOfNodes)
-		{
-			tmp->next = ptr->next;
-			ptr->next = tmp;
-			tmp->prev = ptr;
-			hold = tmp->next;
-			hold->prev = tmp;
-
-			return (tmp);
-		}
-		ptr = ptr->next;
-		idxOfNodes ++;
+		tmp = tmp->next;
+		idxOfNodes++;
 	}
-	return (NULL);
+
+	tmp2 = tmp->next;
+	tmp->next = ptr;
+	tmp2->prev = ptr;
+	ptr->next = tmp2;
+	ptr->prev = tmp;
+
+	return (*h);
 }
