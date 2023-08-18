@@ -10,8 +10,8 @@
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	unsigned int idxOfNodes;
-	size_t numOfNodes = 0;
-	dlistint_t *dummy_h = *h; 
+	unsigned int numOfNodes = 0;
+	dlistint_t *dummy_h = *h;
 	dlistint_t *tmp = *h;
 	dlistint_t *tmp2 = NULL;
 	dlistint_t *ptr = malloc(sizeof(dlistint_t));
