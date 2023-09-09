@@ -44,11 +44,17 @@ hash_node_t *create_node(const char *key, const char *value)
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
+	unsigned long int index;
+	hash_node_t *node, *current_node;
+
+	if (!ht)
+		return (0);
+
 	/* get index */
-	unsigned long int index = key_index((const unsigned char *)key, ht->size);
+	index = key_index((const unsigned char *)key, ht->size);
 	/* create node holds key-value-link */
-	hash_node_t *node = create_node(key, value);
-	hash_node_t *current_node = ht->array[index];
+	node = create_node(key, value);
+	current_node = ht->array[index];
 
 	if (!node)
 		return (0);
