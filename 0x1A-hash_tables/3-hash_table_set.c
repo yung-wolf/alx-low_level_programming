@@ -9,7 +9,8 @@
 hash_node_t *create_node(const char *key, const char *value)
 {
 	/* create node holds key-value-link */
-	hash_node_t *node = (hash_node_t *) malloc (sizeof(hash_node_t));
+	hash_node_t *node = (hash_node_t *) malloc(sizeof(hash_node_t));
+
 	if (!node)
 		return (0);
 	node->key = (char *) malloc(strlen(key) + 1);
@@ -18,7 +19,7 @@ hash_node_t *create_node(const char *key, const char *value)
 		free(node);
 		return (0);
 	}
-	node->value = (char *) malloc (strlen(value) + 1);
+	node->value = (char *) malloc(strlen(value) + 1);
 	if (!node->value)
 	{
 		free(node->key);
@@ -30,7 +31,7 @@ hash_node_t *create_node(const char *key, const char *value)
 	strcpy(node->value, value);
 	node->next = NULL;
 
-	return node;
+	return (node);
 }
 
 
@@ -45,7 +46,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	/* get index */
 	unsigned long int index = key_index((const unsigned char *)key, ht->size);
-	/* create node (holds key-value-link */
+	/* create node holds key-value-link */
 	hash_node_t *node = create_node(key, value);
 	hash_node_t *current_node = ht->array[index];
 
