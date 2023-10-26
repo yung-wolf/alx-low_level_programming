@@ -3,7 +3,7 @@
 # Variables
 NAME = school
 SRC = main.c school.c
-OBJ = main.o school.o
+OBJ = $(SRC:.c=.o)
 
 # Complier and flags
 CC = gcc
