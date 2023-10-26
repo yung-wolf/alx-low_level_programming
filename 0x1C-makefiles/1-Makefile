@@ -1,0 +1,15 @@
+# Makefile for `school` exe
+
+# Variables
+SRC = main.c school.c
+CC=gcc
+
+# Rule to build `school` exe
+
+# Commands
+all: m.h $(SRC)
+	$(CC) $(SRC) -o school
+
+# Clean rule to remove the `school` exe
+clean:
+	rm -f school

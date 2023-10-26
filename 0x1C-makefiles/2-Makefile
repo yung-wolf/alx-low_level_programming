@@ -1,0 +1,19 @@
+# Makefile for the `school` exe
+
+# Variables
+NAME = school
+SRC = main.c school.c
+OBJ = main.o school.o
+
+# Complier and flags
+CC = gcc
+
+all: $(NAME)
+
+# Command
+all: m.h $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+# Remove the exe after the program
+clean:
+	rm -f $(OBJ)
