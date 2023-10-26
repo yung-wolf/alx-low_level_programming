@@ -8,8 +8,6 @@ OBJ = main.o school.o
 # Complier and flags
 CC = gcc
 
-all: $(NAME)
-
 # Command
 all: m.h $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
