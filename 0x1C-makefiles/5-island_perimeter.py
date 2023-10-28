@@ -26,6 +26,7 @@ def island_perimeter(grid):
     (water inside that isn’t connected to the water around the island).
     """
     num_of_rows = len(grid)  # num of rows in grid
+    num_of_elements = len(grid[0])  # num of elements in 1st list in grid
     current_row_number = 0  # Holds the current row number of the loop
     perimeter = 0
     for lst in grid:
@@ -35,12 +36,18 @@ def island_perimeter(grid):
             # checks if current position (cp) element is 1 in grid
             if element == 1:
 
-                # check if water is left of cp. If true perimeter + 1
-                if lst[idx - 1] == 0:
+                if num_of_elements != idx + 1:
+                    # check if water is left of cp. If true perimeter + 1
+                    if lst[idx - 1] == 0:
+                        perimeter += 1
+                else:  # 1 at beginning of list
                     perimeter += 1
 
-                # check if water is right of cp. If true perimeter + 1
-                if lst[idx + 1] == 0:
+                if num_of_elements != idx + 1:
+                    # check if water is right of cp. If true perimeter + 1
+                    if lst[idx + 1] == 0:
+                        perimeter += 1
+                else:
                     perimeter += 1
 
                 # Only look below when not on last row
@@ -48,12 +55,16 @@ def island_perimeter(grid):
                     # check below cp for water zone
                     if grid[current_row_number + 1][idx] == 0:
                         perimeter += 1
-                else:  # 1 is on last row
+                else:  # 1 is on last row. Increment p
                     perimeter += 1
+
+                # look above if not on 1st row
                 if current_row_number > 0:
                     # check above cp for water zone
                     if grid[current_row_number - 1][idx] == 0:
                         perimeter += 1
+                else:  # 1 is on 1st row. Increment p
+                    perimeter += 1
             idx += 1
         current_row_number += 1
 
