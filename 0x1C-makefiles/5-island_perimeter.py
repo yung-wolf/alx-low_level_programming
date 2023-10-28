@@ -35,12 +35,18 @@ def island_perimeter(grid):
             # checks if current position (cp) element is 1 in grid
             if element == 1:
 
-                # check if water is left of cp. If true perimeter + 1
-                if lst[idx - 1] == 0:
+                if num_of_elements != idx + 1:
+                    # check if water is left of cp. If true perimeter + 1
+                    if lst[idx - 1] == 0:
+                        perimeter += 1
+                else:  # 1 at beginning of list
                     perimeter += 1
 
-                # check if water is right of cp. If true perimeter + 1
-                if lst[idx + 1] == 0:
+                if num_of_elements != idx + 1:
+                    # check if water is right of cp. If true perimeter + 1
+                    if lst[idx + 1] == 0:
+                        perimeter += 1
+                else:
                     perimeter += 1
 
                 # Only look below when not on last row
