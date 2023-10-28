@@ -48,6 +48,8 @@ def island_perimeter(grid):
                     # check below cp for water zone
                     if grid[current_row_number + 1][idx] == 0:
                         perimeter += 1
+                else:  # 1 is on last row
+                    perimeter += 1
                 if current_row_number > 0:
                     # check above cp for water zone
                     if grid[current_row_number - 1][idx] == 0:
