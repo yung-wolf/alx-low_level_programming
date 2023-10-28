@@ -36,7 +36,7 @@ def island_perimeter(grid):
             # checks if current position (cp) element is 1 in grid
             if element == 1:
 
-                if num_of_elements != idx + 1:
+                if idx != 0:
                     # check if water is left of cp. If true perimeter + 1
                     if lst[idx - 1] == 0:
                         perimeter += 1
