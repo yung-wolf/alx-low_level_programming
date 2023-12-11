@@ -13,6 +13,9 @@ int linear_search(int *array, size_t size, int value)
 	/* declare index and counter i . check == 1 if value is found*/
 	int i, check = 0;
 
+	if (array == NULL)
+		return (-1);
+
 	for (i = 0; i < (int) size; i++)
 	{
 		if (check == 0)
