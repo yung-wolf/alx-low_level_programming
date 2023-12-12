@@ -36,41 +36,50 @@ int minm(int a, int b)
  */
 int jump_search(int *array, size_t size, int value)
 {
-	int b = (int) sqrt(size), a = 0, i, c = b;
+    int b = (int) sqrt(size), a = 0, i, c = b;
 
-	if (array == NULL)
-		return (-1);
-	while (array[minm(b, size) - 1] < value)
-	{
-		printf("Value checked array[%d] = [%d]\n", a, array[a]);
-		a = b;
-		if (a >= (int) size)
-		{
-			printf("Value found between indexes [%d] and [%d]\n", a - c, b);
-			return (-1);
-		}
-		b = b + (int) sqrt(size);
-	}
-	while (array[a] < value)
-	{
-		printf("Value checked array[%d] = [%d]\n", a, array[a]);
-		if (a >= minm(b, size))
-			return (-1);
-		a = a + 1;
-	}
-	i = a - c;
-	if (i < 0)
-		i = 0;
-	else if (i > 0 && i < c)
-		i = c;
-	printf("Value found between indexes [%d] and [%d]\n", i, i + c);
-	for (; i <= a; i++)
-	{
-		printf("Value checked array[%d] = [%d]\n", i, array[i]);
-		if (array[i] == value)
-			return (i);
-	}
-	if (array[a] == value)
-		return (a);
-	return (-1);
+    if (array == NULL)
+        return (-1);
+    while (array[minm(b, size) - 1] < value)
+    {
+        printf("Value checked array[%d] = [%d]\n", a, array[a]);
+        a = b;
+        if (a >= (int) size)
+        {
+            printf("Value found between indexes [%d] and [%d]\n", a - c, b);
+            return (-1);
+        }
+        b = b + (int) sqrt(size);
+    }
+    while (array[a] < value)
+    {
+        printf("Value checked array[%d] = [%d]\n", a, array[a]);
+        if (a >= minm(b, size))
+        {
+            printf("Reached minimum block index\n");
+            return (-1);
+        }
+        a = a + 1;
+    }
+    i = a - c;
+    if (i < 0)
+        i = 0;
+    else if (i > 0 && i < c)
+        i = c;
+    printf("Value found between indexes [%d] and [%d]\n", i, i + c);
+    for (; i <= a; i++)
+    {
+        printf("Value checked array[%d] = [%d]\n", i, array[i]);
+        if (array[i] == value)
+        {
+            printf("Value %d found at index %d\n", value, i);
+            return (i);
+        }
+    }
+    if (array[a] == value)
+    {
+        printf("Value %d found at index %d\n", value, a);
+        return (a);
+    }
+    return (-1);
 }
